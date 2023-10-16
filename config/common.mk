@@ -167,6 +167,11 @@ PRODUCT_PACKAGE_OVERLAYS += \
     vendor/derp/overlay/common \
     vendor/derp/overlay/no-rro
 
+# Protobuf - Workaround for prebuilt Qualcomm HAL
+PRODUCT_PACKAGES += \
+    libprotobuf-cpp-full-3.9.1-vendorcompat \
+    libprotobuf-cpp-lite-3.9.1-vendorcompat
+
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 
 # Art
